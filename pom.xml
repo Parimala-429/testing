@@ -33,12 +33,40 @@
     <artifactId>testng</artifactId>
     <version>7.7.1</version>
     <scope>test</scope>
+  <exclusions>
+    <exclusion>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+    </exclusion>
+  </exclusions>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.9.1</version>
+  <exclusions>
+    <exclusion>
+      <artifactId>selenium-remote-driver</artifactId>
+      <groupId>org.seleniumhq.selenium</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>netty-handler</artifactId>
+      <groupId>io.netty</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>netty-codec-http</artifactId>
+      <groupId>io.netty</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>guava</artifactId>
+      <groupId>com.google.guava</groupId>
+    </exclusion>
+  </exclusions>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 <dependency>
@@ -52,6 +80,24 @@
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.3.3</version>
+  <exclusions>
+    <exclusion>
+      <artifactId>httpclient5</artifactId>
+      <groupId>org.apache.httpcomponents.client5</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>httpclient5</artifactId>
+      <groupId>org.apache.httpcomponents.client5</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+    </exclusion>
+    <exclusion>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+    </exclusion>
+  </exclusions>
 </dependency>
 
   </dependencies>
